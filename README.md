@@ -1,3 +1,17 @@
+<!-- osa:header:start -->
+# OSA Draw
+
+Infinite canvas whiteboard. Open alternative to **Google Drawings / Jamboard**, part of the [Open Software Alliance](https://github.com/OpenSoftwareAlliance) suite.
+
+| | |
+|---|---|
+| Upstream | [tldraw](https://github.com/tldraw/tldraw), kept in sync with this repository |
+| License | tldraw license (source-available; production use requires a license from tldraw, Inc., see LICENSE.md) |
+
+Credit for the original work goes to the tldraw authors. Everything below this header is the upstream README.
+
+---
+<!-- osa:header:end -->
 <div alt style="text-align: center; transform: scale(.25);">
 	<picture>
 		<source media="(prefers-color-scheme: dark)" srcset="https://github.com/tldraw/tldraw/raw/main/assets/github-hero-dark.png" />
