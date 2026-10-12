@@ -1,153 +1,63 @@
-<!-- osa:header:start -->
+<div align="center">
+
 # OSA Draw
 
-Infinite canvas whiteboard. Open alternative to **Google Drawings / Jamboard**, part of the [Open Software Alliance](https://github.com/OpenSoftwareAlliance) suite.
+**Infinite canvas whiteboard.**
 
-| | |
-|---|---|
-| Upstream | [tldraw](https://github.com/tldraw/tldraw), kept in sync with this repository |
-| License | tldraw license (source-available; production use requires a license from tldraw, Inc., see LICENSE.md) |
+Open source alternative to **Google Drawings / Jamboard**. Part of the [Open Software Alliance](https://github.com/OpenSoftwareAlliance) suite.
 
-Credit for the original work goes to the tldraw authors. Everything below this header is the upstream README.
-
----
-<!-- osa:header:end -->
-<div alt style="text-align: center; transform: scale(.25);">
-	<picture>
-		<source media="(prefers-color-scheme: dark)" srcset="https://github.com/tldraw/tldraw/raw/main/assets/github-hero-dark.png" />
-		<img alt="tldraw" src="https://github.com/tldraw/tldraw/raw/main/assets/github-hero-light.png" />
-	</picture>
 </div>
 
-<p align="center">
-  <a href="https://www.npmjs.com/package/tldraw"><img src="https://img.shields.io/npm/v/tldraw" alt="npm" /></a>
-  <a href="https://www.npmjs.com/package/tldraw"><img src="https://img.shields.io/npm/dm/tldraw" alt="npm downloads" /></a>
-  <a href="https://discord.tldraw.com/?utm_source=github&utm_medium=readme&utm_campaign=sociallink"><img src="https://img.shields.io/badge/discord-join-5865F2?logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://deepwiki.com/tldraw/tldraw"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki" /></a>
-</p>
+---
 
-<h3 align="center">
-  Build infinite canvas apps in React with the tldraw SDK.
-</h3>
+## Features
 
-<p align="center">
-  <a href="https://tldraw.dev/quick-start">Docs</a> · <a href="https://tldraw.dev/examples">Examples</a> · <a href="https://tldraw.dev/starter-kits/overview">Starter kits</a>
-</p>
+- Infinite canvas whiteboard
+- Shapes, arrows, text, images and frames
+- Real-time multiplayer
+- SDK to embed the canvas in other apps
 
-## Feature highlights
+## Tech stack
 
-tldraw provides a feature-complete infinite canvas engine designed to be the foundation for any canvas app. Create custom shapes, tools, bindings and UI components for a custom experience. Use the default whiteboarding tool set or use the library's primitives to build entirely new shapes and interactions.
+- **Current:** React + TypeScript monorepo, Cloudflare Workers + Durable Objects
+- **Target:** Next.js + TypeScript on Cloudflare Workers (see [migration research](https://github.com/OpenSoftwareAlliance/draw/issues/2))
 
-- **Multiplayer** — self-hostable real-time collaboration with [`@tldraw/sync`](https://tldraw.dev/docs/sync)
-- **Drawing and diagramming** — pressure-sensitive drawing, geometric shapes, rich text, arrows, snapping to shapes, edge scrolling, image and video support, image export
-- **Runtime API** - drive the canvas at runtime with the Editor API
-- **Fully extensible** — custom [shapes](https://tldraw.dev/docs/shapes), [tools](https://tldraw.dev/docs/tools), [bindings](https://tldraw.dev/sdk-features/bindings), [UI components](https://tldraw.dev/sdk-features/ui-components), side effects, and event hooks
-- **AI integrations** — canvas primitives for [building with LLMs](https://tldraw.dev/docs/ai)
-- **DOM canvas** — web rendering supports anything the browser supports, including embedded websites from YouTube, Figma, GitHub, [and more](https://tldraw.dev/sdk-features/embed-shape)
-- **Broad support** — works in any browser across desktop, touch screens, tablets, and mobile devices
+## Roadmap
 
-## Who's using tldraw
+- [Open source landscape research](https://github.com/OpenSoftwareAlliance/draw/issues/1)
+- [Migration research: React/Next.js + TypeScript on Cloudflare Workers](https://github.com/OpenSoftwareAlliance/draw/issues/2)
+- [All issues](https://github.com/OpenSoftwareAlliance/draw/issues)
 
-The tldraw SDK powers canvas experiences in products from [Google](https://about.google), [Shopify](https://www.shopify.com), [BlackRock](https://www.blackrock.com), [Autodesk](https://blogs.autodesk.com/forma/2024/06/20/forma-board-collaborative-tool-for-architects/), [ClickUp](https://tldraw.dev/blog/clickup), [Replit](https://docs.replit.com/replitai/canvas), [Google Stitch](https://stitch.withgoogle.com), [Luma](https://lumalabs.ai/app), [Runway](https://runwayml.com), [Padlet](https://tldraw.dev/blog/padlet), [Mobbin](https://tldraw.dev/blog/mobbin), [Jam](https://tldraw.dev/blog/jam), [Craft](https://support.craft.do/en/write-and-edit/whiteboards), [Honeycomb](https://www.honeycomb.io/platform/canvas), [SchoolAI](https://schoolai.com/products/powerups), [Brisk](https://www.briskteaching.com/post/boost-whiteboard), [CADChat](https://cadchat.com), [bigpi](https://www.bigpi.ai), [Genio](https://genio.co), [Pollination](https://www.pollination.solutions), [Legendkeeper](https://www.legendkeeper.com), [Matilda](https://www.matilda.io), [Aries](https://aries.com/infinite), [Alai](https://getalai.com), [Dirac](https://www.diracinc.com), and many more.
+## Self-hosting
 
-See our [showcase](https://tldraw.dev/showcase) for case studies on how teams build with tldraw.
+Installation and configuration follow the upstream project for now: see the [tldraw documentation](https://github.com/tldraw/tldraw#readme).
 
-## Quick start
+## The OSA suite
 
-Install the tldraw package:
+| Product | What it does | Alternative to |
+|---|---|---|
+| [OSA Pad](https://github.com/OpenSoftwareAlliance/pad) | Real-time collaborative document editor. | Google Docs |
+| [OSA Sheet](https://github.com/OpenSoftwareAlliance/sheet) | Online collaborative spreadsheet. | Google Sheets |
+| [OSA Cal](https://github.com/OpenSoftwareAlliance/cal) | Scheduling and booking pages. | Google Calendar (appointment schedules) |
+| [OSA Mail](https://github.com/OpenSoftwareAlliance/mail) | Email forwarding and hosting for custom domains. | Gmail |
+| [OSA Meet](https://github.com/OpenSoftwareAlliance/meet) | Secure peer-to-peer video meetings. | Google Meet |
+| [OSA Draw](https://github.com/OpenSoftwareAlliance/draw) | Infinite canvas whiteboard. | Google Drawings / Jamboard |
+| [OSA Drop](https://github.com/OpenSoftwareAlliance/drop) | Local file sharing in the browser. | Quick Share |
+| [OSA Share](https://github.com/OpenSoftwareAlliance/share) | Simple temporary file hosting. | Google Drive (file links) |
+| [OSA Share Admin](https://github.com/OpenSoftwareAlliance/share-admin) | Moderation panel for OSA Share. | Google Drive admin |
+| [OSA Bin](https://github.com/OpenSoftwareAlliance/bin) | Zero-knowledge encrypted pastebin. | Google Keep (secure notes) |
+| [OSA Snip](https://github.com/OpenSoftwareAlliance/snip) | Self-hosted code snippets and gists. | Google Keep (snippets) |
+| [OSA Short](https://github.com/OpenSoftwareAlliance/short) | URL shortener with analytics. | goo.gl |
+| [OSA Alias](https://github.com/OpenSoftwareAlliance/alias) | DNS-based domain redirection. | Google Domains forwarding |
+| [OSA Page](https://github.com/OpenSoftwareAlliance/page) | Link-in-bio pages. | Google Sites |
+| [OSA Feedback](https://github.com/OpenSoftwareAlliance/feedback) | Feedback boards and public roadmaps. | Google Forms (product feedback) |
+| [OSA Jam](https://github.com/OpenSoftwareAlliance/jam) | Live audio rooms. | Google Meet (audio) |
+| [OSA Micro](https://github.com/OpenSoftwareAlliance/micro) | Ready-to-use micro service APIs. | Google Cloud APIs |
+| [OSA Username](https://github.com/OpenSoftwareAlliance/username) | Check username availability on 100+ sites. | - |
+| [OSA Status](https://github.com/OpenSoftwareAlliance/status) | Uptime monitor and status page for the OSA services. | - |
 
-```bash
-npm i tldraw
-```
+## License and credits
 
-Then, use the `<Tldraw />` component in your React app:
+OSA Draw is based on [tldraw](https://github.com/tldraw/tldraw). Credit for the original work goes to its authors.
 
-```tsx
-import { Tldraw } from 'tldraw'
-import 'tldraw/tldraw.css'
-
-export default function App() {
-	return (
-		<div style={{ position: 'fixed', inset: 0 }}>
-			<Tldraw />
-		</div>
-	)
-}
-```
-
-## Starter kits
-
-Starter kits provide the custom shapes, tools, and user interface needed for common applications. Each kit is MIT-licensed. Hack together a prototype, build out an app on top, or reference the code in a larger project.
-
-Start building with:
-
-```bash
-npx create-tldraw@latest
-```
-
-- **Multiplayer** — self-hosted real-time collaboration powered by `@tldraw/sync` and Cloudflare Durable Objects, the same stack behind [tldraw.com](https://tldraw.com)
-- **Agent** — AI agents that read, interpret, and modify canvas content
-- **Workflow** — drag-and-drop node builder for automation pipelines, visual programming, and no-code platforms
-- **Chat** — canvas-powered AI chat where users sketch, annotate, and mark up images alongside conversations
-- **Image pipeline** — node-based builder for image generation pipelines
-- **Branching chat** — AI chat with visual branching, letting users explore and compare different conversation paths
-- **Shader** — WebGL shaders that respond to canvas interactions
-
-## Local development
-
-The development server runs the examples app at `localhost:5420`. You'll need [Node.js](https://nodejs.org) `^20.0.0`. Clone the repo, then enable [corepack](https://nodejs.org/api/corepack.html) for the correct pnpm version:
-
-```bash
-npm i -g corepack
-```
-
-Install dependencies and start the dev server:
-
-```bash
-pnpm install
-pnpm dev
-```
-
-## Documentation
-
-Documentation for the most recent release can be found on [tldraw.dev/docs](https://tldraw.dev/docs), including [reference docs](https://tldraw.dev/reference/editor/Editor). Our release notes can be found [here](https://tldraw.dev/releases).
-
-For more agent-friendly docs, see our [LLMs.txt](https://tldraw.dev/llms.txt).
-
-From 5.1.x onward, published packages also include a `DOCS.md` file with the appropriate docs-site content and a generated `RELEASE_NOTES.md` file with versioned release notes. If you or your coding agent need release notes for your installed version specifically, check these files alongside the source in your `node_modules` folder.
-
-## Community
-
-- [Discord](https://discord.tldraw.com/?utm_source=github&utm_medium=readme&utm_campaign=sociallink) — questions, feedback, and discussion
-- [Twitter/X](https://twitter.com/tldraw) — news and updates
-- [Submit an issue](https://github.com/tldraw/tldraw/issues/new) — bug reports and feature requests
-
-## Contributing
-
-We are not accepting contributions at this time. If you've found a bug or have a feature request, please [create an issue](https://github.com/tldraw/tldraw/issues/new/choose) and we can discuss it there. See our [contributing guide](https://github.com/tldraw/tldraw/blob/main/CONTRIBUTING.md) for details.
-
-## License
-
-The tldraw SDK is provided under the [tldraw license](https://github.com/tldraw/tldraw/blob/main/LICENSE.md). You can use the SDK freely in development. Production use requires a [license key](https://tldraw.dev/pricing). Visit [tldraw.dev](https://tldraw.dev) to learn more.
-
-## Trademarks
-
-Copyright (c) 2024-present tldraw Inc. The tldraw name and logo are trademarks of tldraw.
-
-Please see our [trademark guidelines](https://github.com/tldraw/tldraw/blob/main/TRADEMARKS.md) for info on acceptable usage.
-
-## Contributors
-
-<a href="https://github.com/tldraw/tldraw/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=tldraw/tldraw&max=400&columns=20" width="100%"/>
-</a>
-
-## Star History
-
-<a href="https://www.star-history.com/?repos=tldraw%2Ftldraw&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=tldraw/tldraw&type=date&theme=dark&legend=top-left&sealed_token=YTo3tyinAnKu6ejENN9D7GqA1uojjEwF1sh1zJsYGDOp0BmB2_UZbnYBZmhW6UZ7ObW96D5J9M5ww8M2d6AniQZ6fIWxWHqpnnFw02hhk5UfAsz52Y-VFJ0ooQDSyIwW6VL64YD4HGQIwmq_0_jIhposmAekoBMCsIZeMX2lQo3j9l59kintv74U5X0y" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=tldraw/tldraw&type=date&legend=top-left&sealed_token=YTo3tyinAnKu6ejENN9D7GqA1uojjEwF1sh1zJsYGDOp0BmB2_UZbnYBZmhW6UZ7ObW96D5J9M5ww8M2d6AniQZ6fIWxWHqpnnFw02hhk5UfAsz52Y-VFJ0ooQDSyIwW6VL64YD4HGQIwmq_0_jIhposmAekoBMCsIZeMX2lQo3j9l59kintv74U5X0y" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=tldraw/tldraw&type=date&legend=top-left&sealed_token=YTo3tyinAnKu6ejENN9D7GqA1uojjEwF1sh1zJsYGDOp0BmB2_UZbnYBZmhW6UZ7ObW96D5J9M5ww8M2d6AniQZ6fIWxWHqpnnFw02hhk5UfAsz52Y-VFJ0ooQDSyIwW6VL64YD4HGQIwmq_0_jIhposmAekoBMCsIZeMX2lQo3j9l59kintv74U5X0y" />
- </picture>
-</a>
+License: tldraw license (source-available; production use requires a license from tldraw, Inc., see LICENSE.md). See the [LICENSE](LICENSE) file in this repository.
